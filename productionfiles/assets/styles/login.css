@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  padding: 20px;
+  animation: fadeInBody 1.2s ease-out forwards;
+}
+
+.background-img {
+  display: none; /* Remove dark blurred background */
+}
+
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #007ea7; /* Updated color and thickness */
+  padding: 4px; /* Optional: adds spacing between image and border */
+  background-color: white; /* Optional: makes border stand out */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 126, 167, 0.3); /* Optional: subtle glow */
+}
+
+.register-box {
+  width: 100%;
+  text-align: center;
+}
+
+.register-box .input-styles {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.register-box .input-styles:focus {
+  border-color: #00bbfb;
+  outline: none;
+}
+
+.register-box .btn {
+  width: 100%;
+  background-color: #007ea7;
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.register-box .btn:hover {
+  background-color: #007ea7;
+  transform: translateY(-2px);
+}
+
+#admin-link {
+  color: #00bbfb;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+#admin-link:hover {
+  color: #03242f;
+  text-decoration: underline;
+}
+
+.account {
+  color: #555;
+  font-size: 14px;
+  margin-top: 10px;
+}
