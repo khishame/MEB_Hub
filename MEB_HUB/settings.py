@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Secret key and debug settings
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-k=f1*d3i*l1d0cz3)a_z^z74722#p8&@tso9*+bd*5_kjcz&t*')
-DEBUG = os.getenv('DEBUG', 'false').lower() in ('true', '1', 'yes', 'on')
+DEBUG = os.getenv('DEBUG', 'True').lower() in ('True', '1', 'yes', 'on')
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,.herokuapp.com').split(',')
 
 # Application definition
